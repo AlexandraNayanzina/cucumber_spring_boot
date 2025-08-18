@@ -3,19 +3,15 @@
 
 <suite name="SpringBootTestNgTest" verbose="10" parallel="tests">
 
-    <test name="DemoSeleniumTest1">
+    <test name="Test1">
         <classes>
-            <class name="com.example.springbootforautotesting2025.TestNGSeleniumTest">
-
-            </class>
+            <class name="com.example.springbootforautotesting2025.TestNGSeleniumTest"></class>
         </classes>
     </test>
 
-    <test name="DemoSeleniumTest2">
+    <test name="Test2">
         <classes>
-            <class name="com.example.springbootforautotesting2025.TestNGSeleniumTest_dup">
-
-            </class>
+            <class name="com.example.springbootforautotesting2025.TestNGSeleniumTest_dup"></class>
         </classes>
     </test>
 

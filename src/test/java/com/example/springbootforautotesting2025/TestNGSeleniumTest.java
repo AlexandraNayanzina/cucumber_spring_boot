@@ -16,7 +16,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 @SpringBootTest
-@ActiveProfiles("dev")
 public class TestNGSeleniumTest extends AbstractTestNGSpringContextTests {
 
     @Autowired
@@ -40,14 +39,15 @@ public class TestNGSeleniumTest extends AbstractTestNGSpringContextTests {
     @Test
     void contextLoads() {
 
+        driver.navigate().to("http://eaapp.somee.com");
         homePage.clickLogin();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Login")));
         loginPage.performLogin("admin", "password");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Employee List")));
         homePage.clickEmployeeList();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Create New")));
         employeeListPage.clickCreate();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h4[text()='Employee']")));
-
         createEmployeePage.performEmployeeCreation("Alex", "5000", "1", 1, "test@test.test");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Employee List")));
         homePage.LogOff();
