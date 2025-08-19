@@ -27,7 +27,7 @@ jobs:
         java-version: '21'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn clean -e -X -Dtest=TestOnGoogle test
+    - name: Run TEST
+      run: mvn clean -Dtest=TestOnGoogle test
 
 
