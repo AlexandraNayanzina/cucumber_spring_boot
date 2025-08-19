@@ -28,6 +28,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Run TEST
-      run: mvn clean -Dtest=TestOnGoogle test
+      run: ./mvnw clean test
 
 

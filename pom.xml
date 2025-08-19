@@ -108,8 +108,6 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven.surefire.version}</version>
 				<configuration>
-					<!-- Ensure Surefire looks in the correct test directory -->
-					<testSourceDirectory>src/test/java</testSourceDirectory>
 					<suiteXmlFiles>
 						<suiteXmlFile>src/test/java/com/example/springbootforautotesting2025/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
