@@ -108,11 +108,10 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>${maven.surefire.version}</version>
 				<configuration>
-<!--					<includes>-->
-<!--						<include>com.example.springbootforautotesting2025.runner.CucumberTestRunner</include>-->
-<!--					</includes>-->
+					<!-- Ensure Surefire looks in the correct test directory -->
+					<testSourceDirectory>src/test/java</testSourceDirectory>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/java/com/example.springbootforautotesting2025/testng.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/java/com/example/springbootforautotesting2025/testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

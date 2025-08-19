@@ -5,7 +5,7 @@
 
     <test name="Test1">
         <classes>
-            <class name="com.example.springbootforautotesting2025.TestNGSeleniumTest"></class>
+            <class name="com.example.springbootforautotesting2025.TestOnGoogle"></class>
         </classes>
     </test>
 
