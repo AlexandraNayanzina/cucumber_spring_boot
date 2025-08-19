@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Scope;
 public class WebDriverLib {
 
     @Bean
-    @Scope("driverscope")
+//    @Scope("driverscope")
     public WebDriver getChromeDriver() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless=new");

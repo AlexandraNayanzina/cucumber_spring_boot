@@ -40,8 +40,8 @@ public class TestNGSeleniumTest extends AbstractTestNGSpringContextTests {
     void contextLoads() {
 
         driver.navigate().to("http://eaapp.somee.com");
-        homePage.clickLogin();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Login")));
+        homePage.clickLogin();
         loginPage.performLogin("admin", "password");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("Employee List")));
         homePage.clickEmployeeList();
