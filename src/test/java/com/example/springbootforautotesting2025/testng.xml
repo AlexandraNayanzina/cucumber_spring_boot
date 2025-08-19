@@ -9,10 +9,4 @@
         </classes>
     </test>
 
-    <test name="Test2">
-        <classes>
-            <class name="com.example.springbootforautotesting2025.TestNGSeleniumTest_dup"></class>
-        </classes>
-    </test>
-
 </suite>

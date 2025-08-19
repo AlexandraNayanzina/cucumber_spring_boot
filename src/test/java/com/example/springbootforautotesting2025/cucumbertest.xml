@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="SpringBootTestNgTest" verbose="10">
+
+    <test name="DemoSeleniumTest1">
+        <classes>
+            <class name="com.example.springbootforautotesting2025.runner.CucumberTestRunner"></class>
+        </classes>
+    </test>
+
+</suite>

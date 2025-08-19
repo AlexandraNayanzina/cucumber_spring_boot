@@ -15,7 +15,7 @@ public class WebDriverLib {
     @Scope("driverscope")
     public WebDriver getChromeDriver() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+        options.addArguments("--headless=new");
         options.addArguments("--window-size=1920,1080");
         WebDriverManager.chromedriver().setup();
         return new ChromeDriver(options);
