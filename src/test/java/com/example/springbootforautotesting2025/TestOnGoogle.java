@@ -22,7 +22,7 @@ public class TestOnGoogle extends AbstractTestNGSpringContextTests {
 
     @Test
     void google_test(){
-        driver.navigate().to("https://google.com");
+        driver.navigate().to("http://eaapp.somee.com");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("About")));
     }
 
